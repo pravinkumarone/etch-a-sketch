@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Etch-a-sketch</h1>
+    </header>
+    
+    <main>
+        <section class="setting">
+            <input type="color" name="color" id="colorPicker">
+            <button id="colorBtn">Color Mode</button>
+            <button id="rainbowBtn">Rainbow Mode</button>
+            <button id="ereaseBtn">Eraser Mode</button>
+            <button id="clearBtn">clear</button>
+            <div class="size-value" id="sizeValue"></div>
+            <input type="range" id="sizeSlider" min="1" max="100" value="" onchange="setGrids()">
+        </section>
+        <div class="container"></div>
+    </main>
+    <footer><p class="github footer">Copyright &copy; 2023 pravinkumarone <a href="https://www.github.com/pravinkumarone"><img src="" alt="github-logo"></a> </p>
+    </footer>
+</body>
+</html>
