@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 class="title">Etch-a-sketch</h1>
+    <header class="header">
+      <h1 class="title">Etch-a-sketch</h1>
     </header>
-    
-    <main>
-        <section class="setting">
-            <input type="color" name="color" value="#333333" id="colorPicker">
-            <button id="colorBtn">Color Mode</button>
-            <button id="rainbowBtn">Rainbow Mode</button>
-            <button id="ereaseBtn">Eraser Mode</button>
-            <button id="clearBtn">clear</button>
-            <div class="size-value" id="sizeValue"></div>
-            <input type="range" id="sizeSlider" min="1" max="100" value="32" onchange="setGrids()">
-        </section>
-        <div class="container"></div>
+    <main class="main">
+      <div class="settings">
+        <input id="colorPicker" type="color" value="#333333" />
+        <button id="colorBtn">Color mode</button>
+        <button id="rainbowBtn">Rainbow mode</button>
+        <button id="eraserBtn">Eraser</button>
+        <button id="clearBtn">Clear</button>
+        <div id="sizeValue" class="size-value">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="1" max="64" />
+      </div>
+      <div id="grid" class="grid"></div>
     </main>
-    <footer><p class="footer">Copyright &copy; 2023 <a href="https://www.github.com/pravinkumarone"> pravinkumarone <img class="logo" src="/images/github.svg" alt="github-logo"></a> </p>
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear())
+        </script>
+      </p>
+      <a href="https://github.com/michalosman" target="_blank">
+        pravinkumarone <img src="images/github.svg" alt="github-log" class="fa-github"></a>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
