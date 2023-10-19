@@ -28,6 +28,7 @@ header{
 .title{
     font-size: 80px;
     line-height: 1.2;
+    color: var(--primary-dark);
 }
 
 main{
@@ -46,20 +47,19 @@ main{
     height: 450px;
     column-gap: 30px;
     row-gap: 30px;
-    width: 200px;
-    background-color: aqua;
+    width: 150px;
 }
 
 #colorPicker{
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
     transition: 0.3s;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: transparent;
     border: none;
-    block-size: 80px;
+    block-size: 60px;
 }
 
 #colorPicker::-webkit-color-swatch{
@@ -116,9 +116,21 @@ button.active{
 }
 
 input[type=range]{
-    width: 200px;
+    width: 150px;
 }
 
 footer{
-    height: 50px;
+   height: 50px;
 }
+
+footer a{
+    text-decoration: none;
+    color: var(--primary-dark);
+}
+
+.logo{
+    height: 18px;
+    width: 18px;
+    color: var(--primary-dark);
+}
+
