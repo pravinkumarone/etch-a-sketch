@@ -1,9 +1,9 @@
 const setGrid = document.querySelector(".set-grid");
 const container = document.querySelector(".container");
 var sizeValue = document.querySelector("#sizeValue");
-let sizeSlider = document.addEventListener("#sizeSlider");
 
-sizeValue.innerHTML = `${sizeSlider} x ${sizeSlider}`; 
+var x = document.getElementById("sizeSlider").value;
+sizeValue.textContent = `${x} x ${x}`;
 
 function setGrids (x){
     for(let i = 0; i<x; i++){
